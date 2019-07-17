@@ -13,6 +13,7 @@
 		45B2A80222DF05E4001A1652 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45B2A80122DF05E4001A1652 /* Assets.xcassets */; };
 		45B2A80522DF05E4001A1652 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45B2A80422DF05E4001A1652 /* Preview Assets.xcassets */; };
 		45B2A80822DF05E4001A1652 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B2A80622DF05E4001A1652 /* LaunchScreen.storyboard */; };
+		45B2A81122DF06E4001A1652 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B2A81022DF06E4001A1652 /* Color+.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		45B2A80422DF05E4001A1652 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		45B2A80722DF05E4001A1652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45B2A80922DF05E4001A1652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		45B2A81022DF06E4001A1652 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +58,7 @@
 		45B2A7FA22DF05E2001A1652 /* SwifterUI */ = {
 			isa = PBXGroup;
 			children = (
+				45B2A80F22DF06C6001A1652 /* Extensions */,
 				45B2A7FB22DF05E2001A1652 /* AppDelegate.swift */,
 				45B2A7FD22DF05E2001A1652 /* SceneDelegate.swift */,
 				45B2A7FF22DF05E2001A1652 /* ContentView.swift */,
@@ -73,6 +76,14 @@
 				45B2A80422DF05E4001A1652 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		45B2A80F22DF06C6001A1652 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				45B2A81022DF06E4001A1652 /* Color+.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -147,6 +158,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				45B2A7FC22DF05E2001A1652 /* AppDelegate.swift in Sources */,
+				45B2A81122DF06E4001A1652 /* Color+.swift in Sources */,
 				45B2A7FE22DF05E2001A1652 /* SceneDelegate.swift in Sources */,
 				45B2A80022DF05E2001A1652 /* ContentView.swift in Sources */,
 			);
