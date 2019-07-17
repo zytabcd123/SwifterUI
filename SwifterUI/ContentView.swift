@@ -10,7 +10,22 @@ import SwiftUI
 
 struct ContentView : View {
     var body: some View {
-        Text("Hello World")
+        NavigationView {
+            ScrollView(alwaysBounceHorizontal: true) {
+                HStack(alignment: .top, spacing: 10) {
+                    CardView()
+                    CardView()
+                    CardView()
+                    CardView()
+                    }
+                    .padding([.top, .leading, .trailing], 20.0)
+                }
+                .navigationBarTitle(Text("Today"), displayMode: NavigationBarItem.TitleDisplayMode.inline)
+
+            
+        }
+//        .edgesIgnoringSafeArea(.top)
+        
     }
 }
 

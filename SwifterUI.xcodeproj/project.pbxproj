@@ -14,6 +14,7 @@
 		45B2A80522DF05E4001A1652 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 45B2A80422DF05E4001A1652 /* Preview Assets.xcassets */; };
 		45B2A80822DF05E4001A1652 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 45B2A80622DF05E4001A1652 /* LaunchScreen.storyboard */; };
 		45B2A81122DF06E4001A1652 /* Color+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B2A81022DF06E4001A1652 /* Color+.swift */; };
+		45B2A81322DF0DAF001A1652 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45B2A81222DF0DAF001A1652 /* CardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		45B2A80722DF05E4001A1652 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		45B2A80922DF05E4001A1652 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		45B2A81022DF06E4001A1652 /* Color+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+.swift"; sourceTree = "<group>"; };
+		45B2A81222DF0DAF001A1652 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				45B2A7FB22DF05E2001A1652 /* AppDelegate.swift */,
 				45B2A7FD22DF05E2001A1652 /* SceneDelegate.swift */,
 				45B2A7FF22DF05E2001A1652 /* ContentView.swift */,
+				45B2A81222DF0DAF001A1652 /* CardView.swift */,
 				45B2A80122DF05E4001A1652 /* Assets.xcassets */,
 				45B2A80622DF05E4001A1652 /* LaunchScreen.storyboard */,
 				45B2A80922DF05E4001A1652 /* Info.plist */,
@@ -161,6 +164,7 @@
 				45B2A81122DF06E4001A1652 /* Color+.swift in Sources */,
 				45B2A7FE22DF05E2001A1652 /* SceneDelegate.swift in Sources */,
 				45B2A80022DF05E2001A1652 /* ContentView.swift in Sources */,
+				45B2A81322DF0DAF001A1652 /* CardView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

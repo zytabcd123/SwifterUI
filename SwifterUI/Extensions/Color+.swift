@@ -24,7 +24,7 @@ public extension Color {
     /// - Parameters:
     ///   - hex: 十六进制色值
     ///   - transparency: 透明度 0 ~ 1
-    init(hex: Int, transparency: Double = 1) {
+    init(_ hex: Int, transparency: Double = 1) {
         self = Color((hex >> 16) & 0xff,
                      g: (hex >> 8) & 0xff,
                      b: hex & 0xff,
@@ -32,7 +32,7 @@ public extension Color {
     }
     
     
-    init(color: UIColor) {
+    init(_ color: UIColor) {
         let ci = CIColor(color: color)
         self = Color(.sRGB,
                      red: Double(ci.red),
