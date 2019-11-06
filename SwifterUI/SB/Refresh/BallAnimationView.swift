@@ -8,7 +8,7 @@
 import UIKit
 
 class BallAnimationView: UIView {
-    
+        
     override func didMoveToSuperview() {
         super.didMoveToSuperview()
         
@@ -18,7 +18,7 @@ class BallAnimationView: UIView {
 
         //动画图层,就是不停变大的那个圆
         let animationLayer = CAShapeLayer()
-        animationLayer.backgroundColor = #colorLiteral(red: 0.2588235294, green: 0.3647058824, blue: 0.9921568627, alpha: 1)
+        animationLayer.backgroundColor = tintColor.cgColor
         animationLayer.frame = CGRect(x: x, y: y, width: w, height: w)
         animationLayer.cornerRadius = w / 2
         

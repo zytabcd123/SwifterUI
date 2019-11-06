@@ -16,6 +16,7 @@ open class ZHRefreshHeader: UIRefreshControl {
     fileprivate var myScrollView: UIScrollView!
     lazy var refreshView: BallAnimationView = {
         let v = BallAnimationView(frame: self.bounds)
+        v.tintColor = self.myScrollView.tintColor
         self.insertSubview(v, at: 0)
         self.beginRefreshing()
         return v

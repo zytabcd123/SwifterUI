@@ -13,11 +13,15 @@ import Photos
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tab: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        tab.alwaysBounceVertical = true
+        tab.addHeaderRefresh {
+            
+        }
     }
 
     @IBAction func timer() {
