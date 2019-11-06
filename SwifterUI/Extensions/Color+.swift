@@ -9,6 +9,7 @@
 import Foundation
 import SwiftUI
 
+@available(iOS 13.0.0, *)
 public extension Color {
     
     init(_ r: Int, g: Int, b: Int, a: Double) {
@@ -42,6 +43,7 @@ public extension Color {
     }
 }
 
+@available(iOS 13.0.0, *)
 public extension Color {
     
     static var random: Color {
