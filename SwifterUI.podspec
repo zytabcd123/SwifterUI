@@ -2,7 +2,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "SwifterUI"
-  s.version      = "0.2"
+  s.version      = "0.3"
   s.summary      = "swift 快速开发框架"
   s.license      = 'MIT'
   s.author       = { "ukeem" => "1944486008@qq.com" }
