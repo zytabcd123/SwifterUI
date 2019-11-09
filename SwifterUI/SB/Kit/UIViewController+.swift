@@ -98,30 +98,3 @@ extension UIViewController {
         navigationController?.navigationBar.titleTextAttributes = d
     }
 }
-
-public protocol NavigationItemProtocol {
-    func setupLeftItem() -> UIButton
-    
-    func leftItemAction(_ sender: UIButton?)
-}
-
-extension UIViewController: NavigationItemProtocol {
-    public func setupLeftItem() -> UIButton {
-        let leftItem = UIButton()
-        leftItem.frame = CGRect(x: 0, y: 0, width: 44, height: 44)
-        leftItem.setImage(UIImage(named: "back"), for: .normal)
-        leftItem.setImage(UIImage(named: "back"), for: .highlighted)
-        leftItem.imageView?.contentMode = .scaleToFill
-        leftItem.titleLabel?.font = UIFont.systemFont(ofSize: 16)
-        leftItem.addTarget(self, action: #selector(leftItemAction(_:)), for: .touchUpInside)
-        leftItem.imageEdgeInsets.left = -25
-        //.... Set Right/Left Bar Button item
-        navigationItem.leftBarButtonItem = UIBarButtonItem(customView: leftItem)
-        return leftItem
-    }
-    
-    @objc open func leftItemAction(_ sender: UIButton?) {
-        self.view.resignFirstResponder()
-        self.navigationController?.popViewController(animated: true)
-    }
-}
