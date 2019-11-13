@@ -18,7 +18,7 @@ public struct HUD {
         hd.label.text = title
         myHud = hd
         if let t = delayHide {
-            hd.minShowTime = t
+            hd.hide(animated: true, afterDelay: t)
         }
     }
     
@@ -28,7 +28,7 @@ public struct HUD {
         hd.label.text = title
         myHud = hd
         if let t = delayHide {
-            hd.minShowTime = t
+            hd.hide(animated: true, afterDelay: t)
         }
     }
     
