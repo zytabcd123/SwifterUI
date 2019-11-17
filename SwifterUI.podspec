@@ -2,11 +2,11 @@
 Pod::Spec.new do |s|
 
   s.name         = "SwifterUI"
-  s.version      = "0.4"
+  s.version      = "0.5"
   s.summary      = "swift 快速开发框架"
   s.license      = 'MIT'
   s.author       = { "ukeem" => "1944486008@qq.com" }
-  s.ios.deployment_target     = '10.0'
+  s.ios.deployment_target     = '9.0'
 
   s.requires_arc = true
   s.homepage     = "https://github.com/zytabcd123/SwifterUI"

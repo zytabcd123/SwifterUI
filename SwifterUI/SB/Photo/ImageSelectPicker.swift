@@ -53,7 +53,11 @@ open class ImageSelectPicker: BaseViewController, IsInImageStoryboard {
             
             showAlert("访问相册权限被拒绝，请点击设置按钮打开相册权限", actions: ["取消","设置"]) { (idx) in
                 if idx == 1 {
-                    UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
+                    if #available(iOS 10.0, *) {
+                        UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
+                    } else {
+                        // Fallback on earlier versions
+                    }
                 }
             }
             return
@@ -64,7 +68,11 @@ open class ImageSelectPicker: BaseViewController, IsInImageStoryboard {
                     DispatchQueue.main.async {
                         self?.showAlert( "访问相册权限被拒绝，请点击设置按钮打开相册权限", actions: ["取消","设置"]) { (idx) in
                             if idx == 1 {
-                                UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
+                                if #available(iOS 10.0, *) {
+                                    UIApplication.shared.open(URL(string: UIApplication.openSettingsURLString)!, options: [:], completionHandler: nil)
+                                } else {
+                                    // Fallback on earlier versions
+                                }
                             }
                         }
                     }

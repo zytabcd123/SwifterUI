@@ -115,7 +115,7 @@
 		450F116623766F6600EBBF5E /* apc_bt_selected_off@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apc_bt_selected_off@3x.png"; sourceTree = "<group>"; };
 		450F116723766F6600EBBF5E /* apc_bt_up@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apc_bt_up@2x.png"; sourceTree = "<group>"; };
 		450F116823766F6600EBBF5E /* apc_bt_up@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "apc_bt_up@3x.png"; sourceTree = "<group>"; };
-		450F117223766FF500EBBF5E /* SwifterUI.podspec */ = {isa = PBXFileReference; lastKnownFileType = file; path = SwifterUI.podspec; sourceTree = SOURCE_ROOT; };
+		450F117223766FF500EBBF5E /* SwifterUI.podspec */ = {isa = PBXFileReference; lastKnownFileType = text; path = SwifterUI.podspec; sourceTree = SOURCE_ROOT; };
 		458BA4C723725EED004CA9E4 /* BaseVcProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseVcProtocol.swift; sourceTree = "<group>"; };
 		458BA4C923725F16004CA9E4 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		458BA4CB23725F8A004CA9E4 /* BaseNavViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavViewController.swift; sourceTree = "<group>"; };
@@ -837,7 +837,7 @@
 				DEVELOPMENT_TEAM = HJQQYZ4D7S;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwifterUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -862,7 +862,7 @@
 				DEVELOPMENT_TEAM = HJQQYZ4D7S;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = SwifterUI/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
