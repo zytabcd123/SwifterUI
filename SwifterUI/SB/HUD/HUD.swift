@@ -1,34 +1,55 @@
 //
 //  HUD.swift
-//  SwifterUI
+//  Education
 //
-//  Created by uke on 2019/11/6.
-//  Copyright © 2019 uke. All rights reserved.
+//  Created by ovfun on 15/12/9.
+//  Copyright © 2015年 牛至网. All rights reserved.
 //
 
 import Foundation
 
 public struct HUD {
-        
-    static var myHud: MBProgressHUD?
+    
+    public static var myHud: MBProgressHUD?
+    
     public static func showInKeyWindow(_ mode: MBProgressHUDMode = .indeterminate, title: String? = nil, delayHide: TimeInterval? = nil) {
-        guard let v = UIApplication.shared.windows.last else {return print("HUD找不到keyWindow")}
-        let hd = MBProgressHUD.showAdded(to: v, animated: true)
-        hd.mode = mode
-        hd.label.text = title
-        myHud = hd
-        if let t = delayHide {
-            hd.hide(animated: true, afterDelay: t)
+        
+        if myHud == nil {
+            
+            myHud = MBProgressHUD(window: UIApplication.shared.keyWindow)
+        }
+        HUD.reset()
+        
+        UIApplication.shared.keyWindow?.addSubview(myHud!)
+        myHud?.mode = mode
+        myHud?.detailsLabelText = title
+        myHud?.detailsLabelFont = UIFont.systemFont(ofSize: 16)
+        myHud?.yOffset = 40
+        myHud?.show(true)
+        
+        if let d = delayHide {
+            
+            HUD.hide(true, delayHide: d)
         }
     }
     
-    public static func showInView(_ view: UIView, mode: MBProgressHUDMode = .indeterminate, title: String? = nil, delayHide: TimeInterval? = nil) {
-        let hd = MBProgressHUD.showAdded(to: view, animated: true)
-        hd.mode = mode
-        hd.label.text = title
-        myHud = hd
-        if let t = delayHide {
-            hd.hide(animated: true, afterDelay: t)
+    public static func showInView(_ view: UIView?, mode: MBProgressHUDMode = .indeterminate, title: String? = nil, delayHide: TimeInterval? = nil) {
+        
+        guard let v = view else {return}
+        if myHud == nil {
+            myHud = MBProgressHUD(view: v)
+        }
+        HUD.reset()
+        
+        v.addSubview(myHud!)
+        myHud?.mode = mode
+        myHud?.detailsLabelText = title
+        myHud?.detailsLabelFont = UIFont.systemFont(ofSize: 16)
+        myHud?.show(true)
+        
+        if let d = delayHide {
+            
+            HUD.hide(true, delayHide: d)
         }
     }
     
@@ -37,7 +58,16 @@ public struct HUD {
     }
     
     public static func hide(_ animat: Bool = true, delayHide: TimeInterval? = nil) {
-        myHud?.hide(animated: animat, afterDelay: delayHide ?? 0)
+        
+        myHud?.hide(animat, afterDelay: delayHide ?? 0)
+    }
+    
+    static func reset() {
+        
+        HUD.myHud?.labelText = nil
+        HUD.myHud?.hide(false)
+        HUD.myHud?.mode = .indeterminate
+        HUD.myHud?.detailsLabelText = nil
     }
 }
 
